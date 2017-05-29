@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_marginBottom="15dp" android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp" android:layout_marginTop="15dp" android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnRealSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bckgrnd" android:text="Real Pass" android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnFakeSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bckgrnd" android:text="Fake Pass" android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnFailSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bckgrnd" android:text="Fail Set" android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnBckrnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bckgrnd" android:text="Set Background" android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnAppSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="15dp"
+        android:background="@drawable/btn_bckgrnd" android:text="App Set" android:textColor="@color/white"/>
+</LinearLayout>

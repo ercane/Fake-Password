@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".geed.act.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Main"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/passLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" android:layout_marginTop="20dp" android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/action_sign_in_short"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/enterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ENTER"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp" android:gravity="left" android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAdminAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.7"
+                android:background="@drawable/btn_bckgrnd" android:text="@string/activate_admin"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp" android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnFakeSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.7"
+                android:background="@drawable/btn_bckgrnd" android:text="@string/fake_settings"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp" android:orientation="vertical">
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.7"
+                android:background="@drawable/btn_bckgrnd" android:text="@string/info"
+                android:textColor="@color/white"/>
+            <LinearLayout
+                android:id="@+id/codeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="0.7" android:orientation="horizontal"
+                android:visibility="gone">
+                <EditText
+                    android:id="@+id/etCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="40"
+                    android:ems="10" android:hint="@string/knox_code" android:inputType="textPersonName"
+                    android:visibility="visible"/>
+                <Button
+                    android:id="@+id/btnCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:text="Save"/>
+                <Button
+                    android:id="@+id/btnCodeFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1" android:text="First"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

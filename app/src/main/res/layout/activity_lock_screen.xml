@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/mainLayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@drawable/sam_wal">
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" android:text="@string/tv_tip" android:textColor="@color/grey_font"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" android:fontFamily="cursive" android:shadowColor="@color/text_shadow_white"
+        android:shadowDx="-2"
+
+        android:shadowDy="-2"
+        android:shadowRadius="1"
+        android:text="dadas"
+        android:textColor="@color/light_font"
+        android:textSize="80sp" android:visibility="gone"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:ems="10"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPassword" android:layout_centerHorizontal="true" android:text="@string/tv_tip"
+        android:textColor="@color/grey_font" android:visibility="gone"/>
+
+</RelativeLayout>
